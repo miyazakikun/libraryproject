@@ -1,0 +1,361 @@
+:root
+{
+	--hijau1: #1acb6a;
+	--hijau2: #17b55e;
+	--putih: #ffffff;
+	--oren: #ffcc66;
+	--hitam: grey;
+	--hitam2: #999999;
+	--hitam-foot: #262626;
+	--hitam-pudar: rgba(26, 26, 26, 0.5);
+	--hijau-pudar: rgba(0, 179, 60, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+	background-color: #f2f2f2;
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+.navbar-sekolah
+{
+	background-color: var(--putih);
+	-webkit-box-shadow: 0px 3px 10px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 10px -7px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 10px -7px rgba(0,0,0,0.75);
+}
+.navbar-sekolah img
+{
+	height: 70px;
+}
+.navbar-sekolah .head > a
+{
+	margin-top: 10px;
+}
+.navbar-sekolah .navbar-toggle
+{
+	margin-top:20px;
+}
+.navbar-sekolah ul > li > a:hover
+{
+	transition-duration: 0.2s;
+}
+.navbar-sekolah ul > .actv > a
+{
+	transition-duration: 0.2s;
+	background-color: var(--hijau1) !important;
+	color: var(--putih) !important;
+}
+.navbar-sekolah ul > .actv > a:hover
+{
+	transition-duration: 0.2s;
+	background-color: var(--hijau2) !important;
+}
+.jangan-dihapus
+{
+	height: 70px;
+}
+.btn-sekolah-hijau
+{
+	transition-duration: 0.2s;
+	background-color: var(--hijau1);
+	color: var(--putih);
+}
+.btn-sekolah-hijau:hover
+{
+	transition-duration: 0.2s;
+	background-color: var(--hijau2);
+}
+.pdless
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.carousel-inner > .item > img
+{
+	border-bottom: 2px solid var(--hijau-pudar);
+	object-position: top;
+	object-fit: cover;
+	width: 100%;
+	height: 450px;
+}
+.slider-caption
+{
+	position: absolute;
+	z-index: 10;
+	right: 15%;
+	bottom: 80px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.slider-caption a,
+.slider-caption a:hover
+{
+	padding: 20px;
+	background-color: var(--hitam-pudar);
+	display: inline-block;
+	color: var(--putih);
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.slider-caption p,
+.slider-caption p:hover
+{
+	margin-top: 10px;
+	background-color: var(--hijau-pudar);
+	display: inline-block;
+	padding:20px;
+	color: var(--putih);
+}
+.header-judul > p
+{
+	color: grey;
+	font-size: 18px;
+}
+.header-judul > .hr1,
+.header-judul > .hr2
+{
+	margin-top: 0px;
+}
+.header-judul > .hr1
+{
+	position: absolute;
+	width: 30%;
+	border: 2px solid var(--hijau-pudar);
+}
+.header-judul > .hr2
+{
+	position: absolute;
+	width: 7%;
+	border: 2px solid var(--oren);
+}
+.berita-kecil
+{
+	padding-top: 30px;
+}
+.berita-kecil > .head > a
+{
+	color: var(--hitam);
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 15px;
+	display: block;
+}
+.berita-kecil > .head > a:hover
+{
+	color: #404040;
+	transition-duration: 0.2s;
+	text-decoration: none;
+}
+.berita-kecil > .head > i
+{
+	color: var(--hitam2);
+	font-style: normal;
+	font-size: 10px;
+}
+.berita-kecil > .head > hr
+{
+	margin-top: 5px;
+	margin-bottom: -15px;
+	border-color: #f2f2f2;
+}
+.berita-kecil > .body > img
+{
+	margin-top: 10px;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.berita-kecil > .body > .img-berita
+{
+	width: 100%;
+	min-height: 400px;
+}
+.berita-kecil > .body > p
+{
+	margin-top:10px;
+	line-height: 18px;
+	text-align: justify;
+}
+.berita-kecil > .foot > a
+{
+	transition-duration: 0.2s;
+	color: var(--putih);
+	background-color: var(--hijau1);
+}
+.berita-kecil > .foot > a:hover
+{
+	transition-duration: 0.2s;
+	background-color: var(--hijau2);
+}
+.bg-foto
+{
+    background-image: url("../../img/bg2.jpg");
+    height: 100%;
+    opacity: 0.9;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.keterangan-gv > .head > a
+{
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--putih);
+}
+.keterangan-gv > .head > p
+{
+	color: var(--putih);
+}
+.keterangan-gv > .body > a
+{
+	transition-duration: 0.2s;
+	background-color: var(--putih);
+	color: var(--hijau1);
+}
+.keterangan-gv > .body > a:hover
+{
+	transition-duration: 0.2s;
+	background-color: #e8fcf1;
+}
+.foto-galeri > img
+{
+	width: 100%;
+	height: 130px;
+	object-fit: cover;
+	margin-bottom: 25px;
+}
+.img-thumbnail
+{
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.footer-content > .head > p
+{
+	color: var(--putih);
+	font-weight: bold;
+}
+.footer-content > .body > p
+{
+	color: #a6a6a6;
+	text-align: justify;
+}
+.footer-content > .body > a
+{
+	color: #a6a6a6;
+	display: block;
+}
+.footer-content > .body > a:hover
+{
+	text-decoration: none;
+	color: #bfbfbf;
+	transition-duration: 0.2s;
+}
+.footer-content > .body > hr
+{
+	border-color: #333333;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.footer-content > .body input[type="submit"]
+{
+	background-color: var(--hijau1);
+	color: var(--putih);
+	font-weight: bold;
+	transition-duration: 0.2s;
+}
+.footer-content > .body input[type="submit"]:hover
+{
+	transition-duration: 0.2s;
+	background-color: var(--hijau2);
+}
+.map > iframe
+{
+	width: 100%;
+	height: 200px;
+}
+.galeri > .head > p
+{
+	color: #e6e6e6;
+	text-align: center;
+}
+.galeri > .head > hr
+{
+	margin-top: 0px;
+	width: 20%;
+	border-color: #f2f2f2;
+}
+.galeri > .body > div > p
+{
+	margin-bottom: 0px;
+	color: grey;
+}
+.galeri > .body > div > a > img
+{
+	margin-top: 20px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 2px;
+	width: 100%;
+}
+
+@media screen and (max-width: 690px)
+{
+	.padding-tb
+	{
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	.pdless-mbl
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.padding-tb-mbl
+	{
+		padding-top:15px;
+		padding-bottom:15px;		
+	}
+	.navbar-sekolah ul > li
+	{
+		text-align: left !important;
+	}
+	.foto-galeri > img
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: transparent;
+		border-color: transparent;
+	}
+}
+
+@media screen and (min-width: 700px)
+{
+	.padding-tb
+	{
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+	.pdless-dsktop
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.navbar-sekolah ul > li > a
+	{
+		padding-top: 25px;
+		height: 70px;
+	}
+}
