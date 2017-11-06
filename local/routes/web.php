@@ -1,6 +1,8 @@
 <?php
 use App\berita;
 use App\pengumuman;
+use App\kategori;
+use Illuminate\Database\Eloquent\Collection;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,21 @@ use App\pengumuman;
 */
 
 Route::get('/', function () {
+  // $data = kategori::create([
+  //   'kategori'=>'adasd'
+  // ]);
+  // $a = get_class($data);
+  // return $a;
+  // $ids = ['6','3','4','5','7'];
+  // $data = kategori::whereIn('id',$ids)->orderBy(DB::raw('FIELD(`id`, '.implode(',', $ids).')'))
+  //   ->get();
+  //   $models = kategori::find($ids);
+  //   $sorted = array_flip($ids);
+  //
+  //   foreach ($models as $model) $sorted[$model->id] = $model;
+  //
+  //   $sorted = Collection::make(array_values($sorted));
+  // return $sorted;
     return redirect('login');;
 });
 
@@ -31,6 +48,9 @@ Route::group(['middleware'=>'auth'], function(){
     Route::resource('katalogs', 'bookController');
     Route::resource('kategoris', 'kategoriController');
     Route::resource('authors', 'authorController');
+    Route::resource('menus', 'MenuController');
+    Route::resource('submenus', 'SubmenuController');
+    Route::resource('pages', 'PageController');
 
 
     Route::post('picgalleries/store/{id}','picgalleryController@store');
@@ -50,3 +70,7 @@ Route::group(['middleware'=>'auth'], function(){
         });
     });
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

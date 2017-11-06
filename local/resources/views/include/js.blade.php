@@ -40,6 +40,7 @@
   <script src="{{asset('admin/bower_components/ckeditor/ckeditor.js')}}"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="{{asset('admin/dist/js/demo.js')}}"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
   <script>
     $(function () {
       $('#example1').DataTable()
@@ -54,13 +55,19 @@
     })
   </script>
   <script>
-    $(function () {
-      // Replace the <textarea id="editor1"> with a CKEditor
-      // instance, using default configuration.
-      CKEDITOR.replace('editor1');
-      //bootstrap WYSIHTML5 - text editor
-      // $('.textarea').wysihtml5();
-    })
+  $(document).ready(function() {
+        $('#editor1').summernote({
+          tabsize: 2,
+          height: 350
+        });
+    });
+    // $(function () {
+    //   // Replace the <textarea id="editor1"> with a CKEditor
+    //   // instance, using default configuration.
+    //   CKEDITOR.replace('editor1');
+    //   //bootstrap WYSIHTML5 - text editor
+    //   // $('.textarea').wysihtml5();
+    // })
   </script>
 @endguest
 

@@ -9,14 +9,14 @@
              <!-- small box -->
              <div class="small-box bg-aqua">
                <div class="inner">
-                 <h3>150</h3>
+                 <h3>{{ \App\book::count() }}</h3>
 
-                 <p>New Orders</p>
+                 <p>Katalog</p>
                </div>
                <div class="icon">
                  <i class="ion ion-bag"></i>
                </div>
-               <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+               <a href="{{ url('katalogs') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
              </div>
            </div>
            <!-- ./col -->
@@ -24,24 +24,9 @@
              <!-- small box -->
              <div class="small-box bg-green">
                <div class="inner">
-                 <h3>53<sup style="font-size: 20px">%</sup></h3>
+                 <h3>{{ \App\User::where('role','member')->count() }}</h3>
 
-                 <p>Bounce Rate</p>
-               </div>
-               <div class="icon">
-                 <i class="ion ion-stats-bars"></i>
-               </div>
-               <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-             </div>
-           </div>
-           <!-- ./col -->
-           <div class="col-lg-3 col-xs-6">
-             <!-- small box -->
-             <div class="small-box bg-yellow">
-               <div class="inner">
-                 <h3>44</h3>
-
-                 <p>User Registrations</p>
+                 <p>Member</p>
                </div>
                <div class="icon">
                  <i class="ion ion-person-add"></i>
@@ -52,22 +37,37 @@
            <!-- ./col -->
            <div class="col-lg-3 col-xs-6">
              <!-- small box -->
-             <div class="small-box bg-red">
+             <div class="small-box bg-yellow">
                <div class="inner">
-                 <h3>65</h3>
+                 <h3>{{ \App\User::where('role','librarian')->count() }}</h3>
 
-                 <p>Unique Visitors</p>
+                 <p>User Librarian</p>
                </div>
                <div class="icon">
-                 <i class="ion ion-pie-graph"></i>
+                 <i class="ion ion-person-stalker"></i>
                </div>
-               <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+               <a href="{{ url('user/librarian') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+             </div>
+           </div>
+           <!-- ./col -->
+           <div class="col-lg-3 col-xs-6">
+             <!-- small box -->
+             <div class="small-box bg-red">
+               <div class="inner">
+                 <h3>{{ \App\author::count() }}</h3>
+
+                 <p>Authors</p>
+               </div>
+               <div class="icon">
+                 <i class="ion ion-person"></i>
+               </div>
+               <a href="{{ url('authors') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
              </div>
            </div>
            <!-- ./col -->
          </div>
          <!-- /.row -->
-         <!-- Main row -->
+         {{-- <!-- Main row -->
          <div class="row">
            <!-- Left col -->
            <section class="col-lg-7 connectedSortable">
@@ -501,7 +501,7 @@
            </section>
            <!-- right col -->
          </div>
-         <!-- /.row (main row) -->
+         <!-- /.row (main row) --> --}}
 
        </section>
        <!-- /.content -->

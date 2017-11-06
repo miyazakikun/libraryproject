@@ -22,6 +22,7 @@
   }
 @endphp
 <body class="hold-transition skin-blue-light sidebar-mini">
+  <div  id="app-vue">
     <div class="wrapper">
         <header class="main-header">
           <!-- Logo -->
@@ -309,7 +310,7 @@
               <li class="active Cap"><a href="{{url('/')}}/@yield('title')"><i class="fa fa-dashboard"></i> @yield('title')</a></li>
             </ol>
           </section>
-            @yield('content')
+              @yield('content')
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
@@ -327,6 +328,7 @@
          immediately after the control sidebar -->
          <div class="control-sidebar-bg"></div>
     </div>
+  </div>
 
     <!-- Scripts -->
     @include('include.js')

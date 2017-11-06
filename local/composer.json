@@ -16,7 +16,8 @@
         "nesbot/carbon": "^1.22",
         "nilsenj/toastr-laravel": "dev-1.0-stable",
         "spatie/laravel-activitylog": "^2.2",
-        "uxweb/sweet-alert": "^1.4"
+        "uxweb/sweet-alert": "^1.4",
+        "tom-lingham/searchy" : "2.*"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

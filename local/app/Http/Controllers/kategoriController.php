@@ -44,7 +44,6 @@ class kategoriController extends Controller
           'kategori'=>'required',
       ]);
        $data = kategori::create($request->all());
-       $data->save();
        Toastr::success('Aksi Berhasil', 'Tambah Kategori Berhasil');
        if (!empty($request->from)) {
          return redirect($request->from.'/create');

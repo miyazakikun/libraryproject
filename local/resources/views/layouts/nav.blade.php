@@ -76,6 +76,17 @@
                             <li class="@if(\Request::is('user/librarian')) active @endif"><a href="{{url('user/librarian')}}"><i class="fa fa-table"></i> Data librarian</a></li>
                      </ul>
               </li>
+              <li class="@if(\Request::is('menus') || \Request::is('menus/*')) active @endif treeview">
+                     <a href="{{url('/menus')}}">
+                      <i class="fa fa-bars"></i>
+                      <span>Menu Page Static
+                      </span>
+                    </a>
+                    <ul class="treeview-menu">
+                      <li class="@if(\Request::is('menus/create')) active @endif"><a href="{!! route('menus.create') !!}"><i class="fa fa-plus-circle"></i> Tambah Menu</a></li>
+                      <li class="@if(\Request::is('menus')) active @endif"><a href="{{url('menus')}}"><i class="fa fa-table"></i> Data Menu</a></li>
+                    </ul>
+              </li>
        @endif
        {{-- <li class="treeview">
          <a href="#">
